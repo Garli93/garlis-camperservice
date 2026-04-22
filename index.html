@@ -40,20 +40,41 @@ nav {
 }
 
 nav a {
-    text-decoration:none;
-    color:#000;
-    font-weight:bold;
-    font-size:16px;
-    transition:0.2s;
+  position: relative;
+  text-decoration: none;
+  color:#000;
+  font-weight:bold;
 }
 
-nav a:hover {
-    color:#1E5BFF;
+nav a::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  width:0%;
+  height:2px;
+  background:#1E5BFF;
+  transition:0.3s;
+}
+
+nav a:hover::after {
+  width:100%;
 }
 
 .hero {
-  padding:100px 20px;
+  padding:120px 20px 100px;
   text-align:center;
+}
+
+.hero h1 {
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  font-size:18px;
+  margin-bottom:25px;
+  color:#555;
 }
 
 .cta {
@@ -89,15 +110,23 @@ nav a:hover {
 
 .card {
   background:#fff;
-  padding:20px;
-  border-radius:10px;
+  padding:25px;
+  border-radius:12px;
   border-left:5px solid #1E5BFF;
-  transition:0.2s;
+  transition:0.25s;
+}
+
+.card h3 {
+  margin-bottom:10px;
+}
+
+.card p {
+  color:#555;
 }
 
 .card:hover {
-  transform:translateY(-5px);
-  box-shadow:0 10px 20px rgba(0,0,0,0.08);
+  transform:translateY(-6px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.08);
 }
 
 footer {
