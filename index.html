@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garli's Camperservice</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#E9EDF2;
+  color:#000;
+}
+
+header {
+  text-align:center;
+  padding:30px 20px;
+}
+
+.logo {
+  max-width:320px;
+}
+
+nav {
+  text-align:center;
+  padding:10px;
+}
+
+nav a {
+  margin:0 15px;
+  text-decoration:none;
+  color:#000;
+  font-weight:bold;
+}
+
+.hero {
+  padding:100px 20px;
+  text-align:center;
+}
+
+.cta {
+  background:#1E5BFF;
+  color:#fff;
+  border:none;
+  padding:12px 25px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.section {
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.services {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  border-left:5px solid #1E5BFF;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- LOGO DIREKT EINGEBAUT -->
+  <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." alt="Garli's Camperservice">
+</header>
+
+<nav>
+  <a href="#leistungen">Leistungen</a>
+  <a href="#ueber">Über mich</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section class="hero">
+  <h1>Professioneller Camperservice</h1>
+  <p>Reparatur, Elektrik & individuelle Lösungen</p>
+  <button class="cta" onclick="scrollToKontakt()">Termin anfragen</button>
+</section>
+
+<section class="section" id="leistungen">
+  <h2>Leistungen</h2>
+  <div class="services">
+
+    <div class="card">
+      <h3>🔧 Reparaturen</h3>
+      <p>Wartung, Instandsetzung und schnelle Hilfe bei Problemen.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Elektrik & Solar</h3>
+      <p>Batterien, Ladebooster, Solaranlagen und Fehlersuche.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛠️ Nachrüstung</h3>
+      <p>Markisen, Sat-Anlagen und technische Erweiterungen.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="ueber">
+  <h2>Über mich</h2>
+  <p>
+    Ich biete praxisnahe Lösungen rund um Camper und Wohnmobile.
+    Mein Fokus liegt auf sauberer Arbeit, ehrlicher Beratung und
+    funktionierenden Systemen – ohne unnötigen Schnickschnack.
+  </p>
+</section>
+
+<section class="section" id="kontakt">
+  <h2>Kontakt</h2>
+  <p>📍 Standort: (eintragen)</p>
+  <p>📞 Telefon: (eintragen)</p>
+  <p>📧 E-Mail: (eintragen)</p>
+</section>
+
+<footer>
+  <p>© 2026 Garli's Camperservice</p>
+</footer>
+
+<script>
+function scrollToKontakt() {
+  document.getElementById("kontakt").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
