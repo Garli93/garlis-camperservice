@@ -108,10 +108,10 @@ nav a:hover::after {
 .card {
   background:#fff;
   padding:25px;
-  border-radius:12px;
-  border-left:5px solid#1245B0;
-  transition:0.25s;
-  box-shadow:0 8px 20px rgba(0,0,0,0.05);
+  border-radius:14px;
+  border-left:5px solid #1245B0;
+  transition: all 0.25s ease;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
 }
 
 .card h3 {
@@ -124,7 +124,7 @@ nav a:hover::after {
 
 .card:hover {
   transform:translateY(-6px);
-  box-shadow:0 12px 25px rgba(0,0,0,0.08);
+  box-shadow:0 14px 30px rgba(0,0,0,0.12);
 }
 
 footer {
@@ -133,6 +133,11 @@ footer {
   color:#555;
   font-size:14px;
 }
+  .content {
+  background: #f8fafc;
+  border-top: 1px solid #dcdfe5;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  }
 </style>
 </head>
   
@@ -154,7 +159,7 @@ footer {
   <p>Reparatur, Elektrik & individuelle Lösungen</p>
   <button class="cta" onclick="scrollToKontakt()">Termin anfragen</button>
 </section>
-
+<section class="content">
 <section class="section" id="leistungen">
   <h2>Leistungen</h2>
   <div class="services">
@@ -192,7 +197,7 @@ footer {
   <p>📞 Telefon: (eintragen)</p>
   <p>📧 E-Mail: (eintragen)</p>
 </section>
-
+</section>   <!-- DAS ist dein Wrapper -->
 <footer>
   <p>© 2026 Garli's Camperservice</p>
 </footer>
